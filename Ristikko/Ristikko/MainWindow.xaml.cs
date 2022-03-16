@@ -24,5 +24,10 @@ namespace Ristikko
         {
             InitializeComponent();
         }
+
+        private void btnNewGame_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
