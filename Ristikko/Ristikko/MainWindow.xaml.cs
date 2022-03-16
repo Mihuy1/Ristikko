@@ -27,7 +27,8 @@ namespace Ristikko
 
         private void PlayerClicksSpace(object sender, RoutedEventArgs e) 
         {
-            
+            var space = (Button)sender;
+            if (!String.IsNullOrWhiteSpace(space.Content.ToString())) return;
         }
         private void btnNewGame_Click(object sender, RoutedEventArgs e)
         {
