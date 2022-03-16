@@ -25,6 +25,10 @@ namespace Ristikko
             InitializeComponent();
         }
 
+        private void PlayerClicksSpace(object sender, RoutedEventArgs e) 
+        {
+            
+        }
         private void btnNewGame_Click(object sender, RoutedEventArgs e)
         {
 

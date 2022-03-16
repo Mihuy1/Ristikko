@@ -10,8 +10,8 @@
     <Window.Resources>
         <Style TargetType="{x:Type Button}">
             <Setter Property="Margin" Value="5"/>
-            <EventSetter Event="Click"/>
-            <Setter Property="FontSize" Value="48"/>
+            <EventSetter Event="Click" Handler="PlayerClicksSpace"/>
+            <Setter Property="FontSize" Value="48" />
 
         </Style>
     </Window.Resources>
