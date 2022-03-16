@@ -37,6 +37,8 @@ namespace Ristikko
             var xValue = int.Parse(coordinates[0]);
             var yValue = int.Parse(coordinates[1]);
 
+            var buttonPosition = new Position() { x = xValue, y = yValue };
+
 
 
              if (_GameLogic.PlayerWin()) 
