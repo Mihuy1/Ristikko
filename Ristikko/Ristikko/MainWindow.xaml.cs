@@ -28,7 +28,7 @@ namespace Ristikko
         private void PlayerClicksSpace(object sender, RoutedEventArgs e) 
         {
             var space = (Button)sender;
-            if (!String.IsNullOrWhiteSpace(space.Content.ToString())) return;
+            if (!String.IsNullOrWhiteSpace(space.Content?.ToString())) return;
             space.Content = _GameLogic.CurrentPlayer;
 
             _GameLogic.SetNextPlayer();
