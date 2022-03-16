@@ -33,6 +33,7 @@ namespace Ristikko
 
              if (_GameLogic.PlayerWin()) 
             {
+                WinScreen.Text = $"{_GameLogic.CurrentPlayer} Wins!!!";
                 WinScreen.Visibility = Visibility.Visible;
             }
 
@@ -48,6 +49,7 @@ namespace Ristikko
                 }
             }
             _GameLogic = new GameLogic();
+            WinScreen.Visibility = Visibility.Collapsed;
         }
     }
 }
