@@ -29,6 +29,11 @@ namespace Ristikko
         {
             return true;
         }
+
+        internal void UpdateBoard(Position position, string value)
+        {
+            Board[position.x, position.y] = value;
+        }
     }
 
 
