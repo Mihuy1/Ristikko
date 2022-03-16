@@ -24,11 +24,14 @@ namespace Ristikko
         {
             InitializeComponent();
         }
-
+        GameLogic _GameLogic = new GameLogic();
         private void PlayerClicksSpace(object sender, RoutedEventArgs e) 
         {
             var space = (Button)sender;
             if (!String.IsNullOrWhiteSpace(space.Content.ToString())) return;
+            space.Content = _GameLogic.CurrentPlayer;
+
+            _GameLogic.SetNextPlayer();
         }
         private void btnNewGame_Click(object sender, RoutedEventArgs e)
         {
