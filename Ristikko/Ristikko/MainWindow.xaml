@@ -41,6 +41,10 @@
             <Button Grid.Row="2" Grid.Column="1"/>
             <Button Grid.Row="2" Grid.Column="2"/>
         </Grid>
+
+        <TextBlock Name="WinScreen" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="56" FontWeight="Bold" Background="WhiteSmoke" Visibility="Collapsed">
+            Player X Wins!!!
+        </TextBlock>
         <Button Name="btnNewGame" Content="New Game" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="btnNewGame_Click"/>
 
     </Grid>

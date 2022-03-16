@@ -31,6 +31,11 @@ namespace Ristikko
             if (!String.IsNullOrWhiteSpace(space.Content?.ToString())) return;
             space.Content = _GameLogic.CurrentPlayer;
 
+             if (_GameLogic.PlayerWin()) 
+            {
+                WinScreen.Visibility = Visibility.Visible;
+            }
+
             _GameLogic.SetNextPlayer();
         }
         private void btnNewGame_Click(object sender, RoutedEventArgs e)

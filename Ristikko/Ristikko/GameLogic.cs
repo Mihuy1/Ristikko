@@ -23,5 +23,12 @@ namespace Ristikko
                 CurrentPlayer = X;
             }
         }
+
+        public bool PlayerWin()
+        {
+            return true;
+        }
     }
+
+
 }
