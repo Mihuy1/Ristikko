@@ -35,7 +35,13 @@ namespace Ristikko
         }
         private void btnNewGame_Click(object sender, RoutedEventArgs e)
         {
-
+            foreach( var control in gridBoard.Children) 
+            {
+                if (control is Button) 
+                {
+                    ((Button)control).Content = String.Empty;
+                }
+            }
         }
     }
 }
