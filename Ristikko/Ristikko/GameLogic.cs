@@ -27,29 +27,29 @@ namespace Ristikko
 
         public bool PlayerWin()
         {
-            // we want to check the horizontal row
-            //for (var i = 0; i < 3; i++)
-            //{
-            //    if (!String.IsNullOrWhiteSpace(Board[i, 0]))
-            //    {
-            //        if (Board[i,0] == Board[i,1] && Board[i,0] == Board[i,2])
-            //        {
-            //            return true;
-            //        }
-            //    }
-            //}
+            //we want to check the horizontal row
+            for (var i = 0; i < 3; i++)
+            {
+                if (!String.IsNullOrWhiteSpace(Board[i, 0]))
+                {
+                    if (Board[i, 0] == Board[i, 1] && Board[i, 0] == Board[i, 2])
+                    {
+                        return true;
+                    }
+                }
+            }
 
             // we want to the colums
-            //for (var i = 0; i < 3; i++)
-            //{
-            //    if (!String.IsNullOrWhiteSpace(Board[0, i]))
-            //    {
-            //        if (Board[0, i] == Board[1, i] && Board[0, i] == Board[2, i])
-            //        {
-            //            return true;
-            //        }
-            //    }
-            //}
+            for (var i = 0; i < 3; i++)
+            {
+                if (!String.IsNullOrWhiteSpace(Board[0, i]))
+                {
+                    if (Board[0, i] == Board[1, i] && Board[0, i] == Board[2, i])
+                    {
+                        return true;
+                    }
+                }
+            }
 
             // Diagonal
 
