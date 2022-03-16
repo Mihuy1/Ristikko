@@ -27,7 +27,7 @@ namespace Ristikko
 
         public bool PlayerWin()
         {
-            return true;
+            return false;
         }
 
         internal void UpdateBoard(Position position, string value)
