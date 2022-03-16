@@ -31,6 +31,14 @@ namespace Ristikko
             if (!String.IsNullOrWhiteSpace(space.Content?.ToString())) return;
             space.Content = _GameLogic.CurrentPlayer;
 
+
+
+            var coordinates = space.Tag.ToString().Split(',');
+            var xValue = int.Parse(coordinates[0]);
+            var yValue = int.Parse(coordinates[1]);
+
+
+
              if (_GameLogic.PlayerWin()) 
             {
                 WinScreen.Text = $"{_GameLogic.CurrentPlayer} Wins!!!";
