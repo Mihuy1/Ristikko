@@ -42,6 +42,7 @@ namespace Ristikko
                     ((Button)control).Content = String.Empty;
                 }
             }
+            _GameLogic = new GameLogic();
         }
     }
 }
